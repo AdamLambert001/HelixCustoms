@@ -2,19 +2,13 @@ class CfgPatches
 { 
     class Helix_Veh
     {
-        units[] = {"Hlx_Cus_Faction", "HelixBlackHawk", "HelixPandur2"}; 
+        units[] = {"HelixPandur2", "HelixUH1Y_Unarmed", "HelixUH1Y_MG", "HelixUH1Y_CAS", "HelixLilBirb_CAS", "HelixLilBirb_Transport", "HelixBlackHawk"}; 
         weapons[] = {}; 
         requiredVersion = 0.1; 
         requiredAddons[] = {"A3_Characters_F", "rhsusf_main", "rhsusf_c_weapons", "mas_cia_jsog", "rhsusf_c_troops", "rhs_infantry2"}; 
     }; 
 }; 
-/*
-Custom Editor info
-Hlx_Categ_Cus
-Hlx_Categ_Cus_heli
-Hlx_Categ_Cus_armoured
-Hlx_Categ_Cus_air
-*/
+
 class CfgVehicles 
 {
     class LandVehicle;
@@ -39,7 +33,7 @@ class CfgVehicles
         displayName = "[Helix] Pandur II";
         hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\APC_01_P6.paa", "Helix_vehicles\Data\APC_02_P3.paa", "Helix_vehicles\Data\APC_RCWS_02.paa", "Helix_vehicles\Data\APC_Rails_02.paa"};
-    };//"Helix_vehicles\Data\UH1Y_Ven.paa"
+    };
 
 //-------------------------------------------------Helicopters-------------------------------------------------//
     class HelixUH1Y_Unarmed: RHS_UH1Y_UNARMED_d
@@ -52,7 +46,7 @@ class CfgVehicles
         displayName = "[Helix] UH-1Y (Unarmed)";
         hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\UH1Y_Ven.paa"};
-    }; //RHS_UH1Y_FFAR_d
+    };
 
     class HelixUH1Y_MG: RHS_UH1Y_d
     {

@@ -2,7 +2,7 @@ class CfgPatches
 { 
     class HelixBase 
     {
-        units[] = {"Hlx_Cus_Faction", "Helix_Digi", "Helix_M81", "Helix_Cus_Wallace", "HelixBlackHawk"}; 
+        units[] = {"Hlx_Cus_Faction", "Helix_Digi", "Helix_M81", "Helix_Cus_Wallace", "Helix_Digi_Grey"}; 
         weapons[] = {}; 
         requiredVersion = 0.1; 
         requiredAddons[] = {"A3_Characters_F", "rhsusf_main", "rhsusf_c_weapons", "mas_cia_jsog", "rhsusf_c_troops", "rhs_infantry2"}; 
