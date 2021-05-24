@@ -2,10 +2,10 @@ class CfgPatches
 { 
     class Helix_Vest_Config 
     { 
-        units[] = {}; 
+        units[] = {"Hlx_Cus_Faction";}; 
         weapons[] = {}; 
         requiredVersion = 0.1; 
-        requiredAddons[] = {"A3_Characters_F"}; 
+        requiredAddons[] = {"A3_Characters_F", "rhsusf_main", "rhsusf_c_weapons", "mas_cia_jsog", "rhsusf_c_troops", "rhs_infantry2"}; 
     }; 
 }; 
 class cfgWeapons 
@@ -22,7 +22,7 @@ class cfgWeapons
 
     class Custom_Camo: Uniform_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "Custom Camo"; 
         picture = ""; 
         model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; 
@@ -34,7 +34,7 @@ class cfgWeapons
     }; 
     class Custom_Camo_SS: Uniform_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "Custom Camo (Rolled Sleeves)"; 
         picture = ""; 
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
@@ -46,7 +46,7 @@ class cfgWeapons
     }; 
     class Custom_Camo_TShirt: Uniform_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "Custom Camo (T-Shirt)"; 
         picture = ""; 
         model = "\A3\characters_f_gamma\Guerrilla\ig_guerrilla1_1.p3d"; 
@@ -69,7 +69,7 @@ class cfgWeapons
 
     class Helix_Vest_OP_Digi: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] Digi Vest (Operator)"; 
         picture = ""; 
         model = "A3\Characters_F\BLUFOR\equip_b_Vest01"; 
@@ -136,7 +136,7 @@ class cfgWeapons
     };
     class Helix_Vest_OP_M81: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] M81 Vest (Operator)"; 
         picture = ""; 
         model = "A3\Characters_F\BLUFOR\equip_b_Vest01"; 
@@ -203,7 +203,7 @@ class cfgWeapons
     };
     class Helix_Vest_OP_Black: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] Black Vest (Operator)"; 
         picture = ""; 
         model = "A3\Characters_F\BLUFOR\equip_b_Vest01"; 
@@ -270,7 +270,7 @@ class cfgWeapons
     };
     class Helix_Vest_Breach_Digi: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] Digi Vest (Breacher)"; 
         picture = ""; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_breacher.p3d"; 
@@ -337,7 +337,7 @@ class cfgWeapons
     };
     class Helix_Vest_Breach_M81: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] M81 Vest (Breacher)"; 
         picture = ""; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_breacher.p3d"; 
@@ -404,7 +404,7 @@ class cfgWeapons
     };
     class Helix_Vest_Breach_Black: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] Black Vest (Breacher)"; 
         picture = ""; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_breacher.p3d"; 
@@ -471,7 +471,7 @@ class cfgWeapons
     };
     class Helix_Vest_Gunner_Black: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] Black Vest (Gunner)"; 
         picture = ""; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_MG.p3d"; 
@@ -538,7 +538,7 @@ class cfgWeapons
     };
     class Helix_Vest_Gunner_Digi: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] Digi Vest (Gunner)"; 
         picture = ""; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_MG.p3d"; 
@@ -605,7 +605,7 @@ class cfgWeapons
     };
     class Helix_Vest_Gunner_M81: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix] M81 Vest (Gunner)"; 
         picture = ""; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_MG.p3d"; 
@@ -675,7 +675,7 @@ class cfgWeapons
     //************************************************************************************************************************************************************************************************
 	class Helix_Vest_Wallace: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix Customs] Wallace's Vest"; 
         picture = ""; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_breacher.p3d"; 
@@ -742,7 +742,7 @@ class cfgWeapons
     };
 	class Helix_Vest_OP_Bruon: Vest_Camo_Base 
     { 
-        scope = 2; 
+        scope=2; 
         displayName = "[Helix Customs] Bruon Vest (Operator)"; 
         picture = ""; 
         model = "A3\Characters_F\BLUFOR\equip_b_Vest01"; 
