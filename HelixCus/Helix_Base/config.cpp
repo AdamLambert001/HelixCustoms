@@ -403,6 +403,7 @@ class CfgVehicles
     //\A3\characters_f_beta\INDEP\ia_soldier_02.p3d
     class B_AssaultPack_Base;
 	class tfw_ilbe_A_coy;
+	class tfw_ilbe_gr;
 
 	class Matt_R_Backpack_Cus: tfw_ilbe_A_coy 
 	{
@@ -414,14 +415,14 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"Helix_Base\Data\Cus_M_ROB.paa"};
 	};
     
-    class Custom_Backpack_Compact: tfw_ilbe_A_coy {
+    class Custom_Backpack_Compact: tfw_ilbe_gr {
         
 		scope=2;
 		scopeCurator = 2;
-        displayName = "Custom Backpack Compact";
+        displayName = "[Helix] Radio Backpack";
         picture = "";
         hiddenSelections[] = {"Camo"}; 
-        hiddenSelectionsTextures[] = {"Helix_Base\Data\Cus_M_ROB.paa"};
+        hiddenSelectionsTextures[] = {"Helix_Base\Data\H_RB.paa"};
     };
 };
 
@@ -718,7 +719,7 @@ class cfgWeapons
     { 
         scope=2; 
         displayName = "[Helix] Digi Vest (Operator)"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\vest.paa"; 
         model = "A3\Characters_F\BLUFOR\equip_b_Vest01"; 
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtDigi.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
@@ -786,7 +787,7 @@ class cfgWeapons
     { 
         scope=2; 
         displayName = "[Helix] Digi Vest (Breacher)"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\vest.paa"; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_breacher.p3d"; 
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtDigi.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
@@ -854,7 +855,7 @@ class cfgWeapons
     { 
         scope=2; 
         displayName = "[Helix] Black Vest (Gunner)"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\vest.paa"; 
         model = "\VSM_Vests\lbt6094\models\VSM_lbt6094_MG.p3d"; 
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_boxMag", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase"};
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "Helix_vests\Data\VSMLBT\boxmag.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtBlack.paa"}; 

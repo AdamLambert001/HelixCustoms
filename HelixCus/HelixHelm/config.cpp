@@ -36,7 +36,7 @@ class cfgWeapons
 		author = "Wallace";
 		_generalMacro = "H_Beret_Officers";
 		displayName = "[Helix] Officers Beret";
-		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Beret_Colonel_ca.paa";
+		picture = "\Helix_Base\UI\beret.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\beret_officer.paa"};
 	};//rhsusf_hgu56p_visor_tan
 
@@ -44,7 +44,7 @@ class cfgWeapons
 		author = "Wallace";
 		_generalMacro = "H_Avi_Stnrd";
 		displayName = "[Helix] Aviation HGU56";
-		picture = "";
+		picture = "\Helix_Base\UI\avi.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Avi.paa"};
 	};
 
@@ -52,7 +52,7 @@ class cfgWeapons
 		author = "Wallace";
 		_generalMacro = "H_Medical_Ops";
 		displayName = "[Helix] Ops (Medical)";
-		picture = "";
+		picture = "\Helix_Base\UI\mhelm.paa";
         hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\opshm1.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
 	};
@@ -61,7 +61,7 @@ class cfgWeapons
     class H_Ops_Bruon: Hlx_OPSCORE_BASE {
 		author = "Wallace";
 		displayName = "[Helix Customs] Bruon's Ops";
-		picture = "";
+		picture = "\Helix_Base\UI\helm.paa";
         hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\opsh_bruon.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
     };
@@ -69,7 +69,7 @@ class cfgWeapons
     class Hlx_Wallace_Airframe: H_HelmetB
     {
         displayName = "[Helix Customs] Wallace Airframe";
-        picture = "";
+        picture = "\Helix_Base\UI\helm.paa";
         model = "\mas_cia_jsog\fast\mas_airframe_b.p3d";
         hiddenSelections[] = {"camo", "camo2"};
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\fast_cb.paa", "\mas_cia_jsog\fast\data\ops_co.paa"};
@@ -90,7 +90,7 @@ class cfgWeapons
     class H_C_Avi_Kroner: rhsusf_hgu56p_visor_tan {
 		author = "Wallace";
 		displayName = "[Helix Customs] Kronenberg HGU56";
-		picture = "";
+		picture = "\Helix_Base\UI\avi.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Kro.paa"};
 	};
 }; 

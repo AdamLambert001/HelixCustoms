@@ -23,8 +23,8 @@ class cfgWeapons
     class Custom_Camo: Uniform_Base 
     { 
         scope=2; 
-        displayName = "Custom Camo"; 
-        picture = ""; 
+        displayName = "Custom Camo";
+        picture = picture = "\Helix_Base\UI\vest.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_vests"; 
@@ -35,8 +35,8 @@ class cfgWeapons
     class Custom_Camo_SS: Uniform_Base 
     { 
         scope=2; 
-        displayName = "Custom Camo (Rolled Sleeves)"; 
-        picture = ""; 
+        displayName = "Custom Camo (Rolled Sleeves)";
+        picture = picture = "\Helix_Base\UI\vest.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_vests_SS"; 
@@ -47,8 +47,8 @@ class cfgWeapons
     class Custom_Camo_TShirt: Uniform_Base 
     { 
         scope=2; 
-        displayName = "Custom Camo (T-Shirt)"; 
-        picture = ""; 
+        displayName = "Custom Camo (T-Shirt)";
+        picture = picture = "\Helix_Base\UI\vest.paa";
         model = "\A3\characters_f_gamma\Guerrilla\ig_guerrilla1_1.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_vests_TShirt"; 
@@ -69,7 +69,7 @@ class cfgWeapons
 	class H_Vest_OP_M81: Helix_Vest_Base {
 		author = "Wallace";
 		displayName = "[Helix] M81 Vest (Operator)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtM81.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
@@ -77,7 +77,7 @@ class cfgWeapons
 	class H_Vest_OP_Black: Helix_Vest_Base {
 		author = "Wallace";
 		displayName = "[Helix] Black Vest (Operator)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtBlack.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
@@ -85,7 +85,7 @@ class cfgWeapons
 	class Helix_Vest_Breach_M81: Helix_Vest_Breach_Base {
 		author = "Wallace";
 		displayName = "[Helix] M81 Vest (Breacher)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtM81.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
@@ -93,7 +93,7 @@ class cfgWeapons
 	class Helix_Vest_Breach_Black: Helix_Vest_Breach_Base {
 		author = "Wallace";
 		displayName = "[Helix] Black Vest (Breacher)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtBlack.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
@@ -101,7 +101,7 @@ class cfgWeapons
 	class Helix_Vest_Gunner_Digi: Helix_Vest_Gunner_Black {
 		author = "Wallace";
 		displayName = "[Helix] Digi Vest (Gunner)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_boxMag", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase"};
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "Helix_vests\Data\VSMLBT\boxmag.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtDigi.paa"}; 
     };
@@ -109,7 +109,7 @@ class cfgWeapons
 	class Helix_Vest_Gunner_M81: Helix_Vest_Gunner_Black {
 		author = "Wallace";
 		displayName = "[Helix] M81 Vest (Gunner)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_boxMag", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase"};
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "Helix_vests\Data\VSMLBT\boxmag.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtM81.paa"}; 
     };
@@ -119,7 +119,7 @@ class cfgWeapons
 	class Helix_Vest_Breach_Wallace: Helix_Vest_Breach_Base {
 		author = "Wallace";
 		displayName = "[Helix Customs] Wallace's (Breacher)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\wallylbt.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
@@ -127,7 +127,7 @@ class cfgWeapons
 	class H_Vest_OP_Bruon: Helix_Vest_Base {
 		author = "Wallace";
 		displayName = "[Helix Customs] Bruon's Vest (Operator)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear_bruon.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtM81.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
@@ -135,7 +135,7 @@ class cfgWeapons
 	class H_Vest_OP_Yeet: Helix_Vest_Base {
 		author = "Wallace";
 		displayName = "[Helix Customs] Yeet's Vest (Operator)";
-		picture = "";
+		picture = "\Helix_Base\UI\vest.paa";
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\YeetGear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\YeetLbt.paa", "Helix_vests\Data\VSMLBT\Pouches.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
@@ -151,7 +151,7 @@ class cfgWeapons
 	class Hlx_OPSCORE_BASE: H_HelmetB
     {
         displayName = "[Helix] Ops";
-        picture = "";
+        picture = "\Helix_Base\UI\helm.paa";
         model = "\VSM_Helmets\models\VSM_ops";
         hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\opsh1.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
