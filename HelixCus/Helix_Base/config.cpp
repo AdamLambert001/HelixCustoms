@@ -43,6 +43,10 @@ class CfgEditorSubcategories
 	{
 		displayName="Helix Custom Planes";
 	};
+	class Hlx_Categ_Uniforms
+	{
+		displayName="Helix Uniforms";
+	};
 };
 
 class CfgUnitInsignia
@@ -71,14 +75,15 @@ class CfgVehicles
 
     class Helix_Digi: B_soldier_F //selects what base to use
 	{
-		
 		scope=2;
 		scopeCurator = 2;
 		author = "Wallace";
+		rank = "PRIVATE";
 		displayName = "[Helix] Full Digi"; //the display name for the arsenal
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_Full_Digi"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -94,10 +99,12 @@ class CfgVehicles
 		scope=2;
 		scopeCurator = 2;
 		author = "Wallace";
+		rank = "PRIVATE";
 		displayName = "[Helix] Full M81"; //the display name for the arsenal
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_Full_M81"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -117,6 +124,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_blk_Digi"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -136,6 +144,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_blk_M81"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -155,6 +164,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_OD_Digi"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -174,6 +184,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_OD_M81"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -194,6 +205,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_grey_Digi"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -214,6 +226,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_grey_M81"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -233,6 +246,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_Full_Digi_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -251,6 +265,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_Full_M81_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -269,6 +284,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_blk_Digi_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -287,6 +303,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_blk_M81_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -306,6 +323,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_OD_Digi_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -325,6 +343,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_OD_M81_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -345,6 +364,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_grey_Digi_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
@@ -365,6 +385,7 @@ class CfgVehicles
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
+		editorSubcategory = "Hlx_Categ_Uniform";
 		uniformclass = "Helix_grey_M81_SS"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
