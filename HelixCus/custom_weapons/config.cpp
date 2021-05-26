@@ -7,8 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"A3_Characters_F_BLUFOR",
-			"Helix_Base"
+			"A3_Characters_F_BLUFOR"
 		};
 	};
 };

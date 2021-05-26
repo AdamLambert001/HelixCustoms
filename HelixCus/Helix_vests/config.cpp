@@ -20,43 +20,6 @@ class cfgWeapons
         class ItemInfo; 
     }; 
 
-    class Custom_Camo: Uniform_Base 
-    { 
-        scope=2; 
-        displayName = "Custom Camo";
-        picture = picture = "\Helix_Base\UI\vest.paa";
-        model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; 
-        class ItemInfo : UniformItem { 
-            uniformClass = "Helix_vests"; 
-            containerClass = "Supply50"; 
-            mass = 50; 
-        }; 
-    }; 
-    class Custom_Camo_SS: Uniform_Base 
-    { 
-        scope=2; 
-        displayName = "Custom Camo (Rolled Sleeves)";
-        picture = picture = "\Helix_Base\UI\vest.paa";
-        model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
-        class ItemInfo : UniformItem { 
-            uniformClass = "Helix_vests_SS"; 
-            containerClass = "Supply50"; 
-            mass = 50; 
-        }; 
-    }; 
-    class Custom_Camo_TShirt: Uniform_Base 
-    { 
-        scope=2; 
-        displayName = "Custom Camo (T-Shirt)";
-        picture = picture = "\Helix_Base\UI\vest.paa";
-        model = "\A3\characters_f_gamma\Guerrilla\ig_guerrilla1_1.p3d"; 
-        class ItemInfo : UniformItem { 
-            uniformClass = "Helix_vests_TShirt"; 
-            containerClass = "Supply30"; 
-            mass = 35; 
-        }; 
-    }; 
-
     //************************************************************************************************************************************************************************************************
     //*****             Vests                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
