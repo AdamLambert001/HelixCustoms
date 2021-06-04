@@ -87,6 +87,15 @@ class cfgWeapons
         };
     };
 
+    class Srg_Airframe : Hlx_Wallace_Airframe 
+    {
+        author = "Wallace";
+		displayName = "[Helix Customs] SRG Airframe";
+        picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelections[] = {"camo", "camo2"};
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\srg.paa", "\mas_cia_jsog\fast\data\ops_co.paa"};
+    };
+
     class H_C_Avi_Kroner: rhsusf_hgu56p_visor_tan {
 		author = "Wallace";
 		displayName = "[Helix Customs] Kronenberg HGU56";

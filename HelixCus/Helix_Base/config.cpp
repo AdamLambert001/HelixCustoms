@@ -533,6 +533,26 @@ class CfgVehicles
 			{"Helix_Vest_Wallace"};
 	};
 
+	class Helix_Rib: B_Soldier_TL_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[HelixCustoms] Rob"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
+		model = "\A3\Characters_F_EPB\Guerrilla\ig_guerrilla5_1.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Cus";
+		uniformclass = "Helix_Rib_uni"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"camo1", "camo2" ,"Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\HLX_R_BU.paa", "\Helix_Base\Data\G3\Digi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
     //\A3\characters_f_beta\INDEP\ia_soldier_02.p3d
     class B_AssaultPack_Base;
 	class tfw_ilbe_A_coy;
@@ -835,6 +855,24 @@ class cfgWeapons
 			mass = 35;
 		};
 	};
+
+	class Helix_Rib_Uni: Uniform_Base {
+		
+		scope=2;
+		scopeCurator = 2;
+		displayName = "[Helix Customs] Rib's Uniform";
+		author = "Rib";
+		picture = "";
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
+
+		class ItemInfo: UniformItem {
+			uniformClass = "Helix_Rib";
+			containerClass = "Supply30";
+			mass = 35;
+		};
+	};
+
+	
 
 
     //\A3\characters_f_beta\INDEP\ia_soldier_02.p3d
