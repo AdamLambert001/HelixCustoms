@@ -57,6 +57,22 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\opshm1.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
 	};
 
+    class H_Ops_Winter_Blue: Hlx_OPSCORE_BASE {
+		author = "Wallace";
+		displayName = "[Helix] Winter Ops";
+		picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\OpsWinter_Blue.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
+    };
+
+    class H_Ops_Winter_Red: Hlx_OPSCORE_BASE {
+		author = "Wallace";
+		displayName = "[Helix] Winter Medical Ops";
+		picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\OpsWinter_Red.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
+    };
+
     //----------------------------Customs----------------------------//
     class H_Ops_Bruon: Hlx_OPSCORE_BASE {
 		author = "Wallace";

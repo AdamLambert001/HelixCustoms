@@ -80,6 +80,7 @@ class CfgVehicles
 	class B_Soldier_TL_F;
 	class B_Soldier_SL_F;
 	class B_officer_F;
+	class B_CTRG_Soldier_base_F;
 
 	class Helix_Soldier_Pvt: B_soldier_F //selects what base to use Hlx_Categ_Infantry
 	{
@@ -508,11 +509,31 @@ class CfgVehicles
 			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
 	};
 
+	class B_Helix_Winter: B_soldier_F //selects what base to use
+	{
+		
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Winter Camo"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
+		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		backpack = "";
+		uniformclass = "Helix_grey_M81_SS"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"Helix_Base\Data\G3\WinterCamo.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
 	//-------------------------------------------------------------------------------------------Customs-------------------------------------------------------------------------------------------//
 	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
-	class Helix_Cus_Wallace: B_soldier_F //selects what base to use
+	class Helix_Cus_Wallace: B_CTRG_Soldier_base_F //selects what base to use
 	{
 		
 		scope=2;
@@ -520,7 +541,7 @@ class CfgVehicles
 		author = "Wallace";
 		displayName = "[Helix Custom] Wallace"; //the display name for the arsenal
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
-		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		//model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
 		editorSubcategory="Hlx_Categ_Cus";
 		uniformclass = "Helix_Cus_Wallace_Uni"; //links up to the class in CfgWeapons
@@ -557,6 +578,8 @@ class CfgVehicles
     class B_AssaultPack_Base;
 	class tfw_ilbe_A_coy;
 	class tfw_ilbe_gr;
+    class B_kitbag_Base;
+    class B_Carryall_Base;
 
 	class Matt_R_Backpack_Cus: tfw_ilbe_A_coy 
 	{
@@ -576,6 +599,46 @@ class CfgVehicles
         picture = "";
         hiddenSelections[] = {"Camo"}; 
         hiddenSelectionsTextures[] = {"Helix_Base\Data\H_RB.paa"};
+    };
+
+	class Helix_Backpack_Carryall_Winter: B_Carryall_Base {
+        
+        scope=2;
+        scopeCurator = 2;
+        displayName = "[Helix] Winter Carryall";
+        picture = "";
+        hiddenSelections[] = {"Camo"}; 
+        hiddenSelectionsTextures[] = {"Helix_Base\Data\Carryall_Winter.paa"};
+    };
+
+	class Helix_Backpack_Compact_Winter1: B_AssaultPack_Base {
+        
+        scope=2;
+        scopeCurator = 2;
+        displayName = "[Helix] Winter Compact";
+        picture = "";
+        hiddenSelections[] = {"Camo"}; 
+        hiddenSelectionsTextures[] = {"Helix_Base\Data\Compact_Winter.paa"};
+    };
+
+	class Helix_Backpack_Kitbag_Winter: B_kitbag_Base {
+        
+        scope=2;
+        scopeCurator = 2;
+        displayName = "[Helix] Winter Kitbag";
+        picture = "";
+        hiddenSelections[] = {"Camo"}; 
+        hiddenSelectionsTextures[] = {"Helix_Base\Data\Kitbag_Winter.paa"};
+    };
+
+	class Helix_Backpack_Compact_Winter: tfw_ilbe_gr {
+        
+        scope=2;
+        scopeCurator = 2;
+        displayName = "[Helix] Winter Radio Backpack";
+        picture = "";
+        hiddenSelections[] = {"Camo"}; 
+        hiddenSelectionsTextures[] = {"Helix_Base\Data\H_WRB.paa"};
     };
 };
 
@@ -603,7 +666,7 @@ class cfgWeapons
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_Digi"; 
-            containerClass = "Supply30"; 
+            containerClass = "Supply80"; 
             mass = 35; 
         }; 
     };
@@ -617,7 +680,7 @@ class cfgWeapons
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_M81"; 
-            containerClass = "Supply30"; 
+            containerClass = "Supply80"; 
             mass = 35; 
         }; 
     };
@@ -632,7 +695,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_Blk";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -647,7 +710,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_Blk";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -662,7 +725,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_OD";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -677,7 +740,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_OD";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -692,7 +755,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_Grey";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -707,7 +770,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_Grey";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -721,7 +784,7 @@ class cfgWeapons
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_Digi_SS"; 
-            containerClass = "Supply30"; 
+            containerClass = "Supply80"; 
             mass = 35; 
         }; 
     };
@@ -735,7 +798,7 @@ class cfgWeapons
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_M81_SS"; 
-            containerClass = "Supply30"; 
+            containerClass = "Supply80"; 
             mass = 35; 
         }; 
     };
@@ -751,7 +814,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_Blk_SS";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -767,7 +830,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_Blk_SS";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -783,7 +846,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_OD_SS";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -799,7 +862,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_OD_SS";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -815,7 +878,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_Grey_SS";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -831,7 +894,23 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_Grey_SS";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
+			mass = 35;
+		};
+	};
+
+	class U_B_Hlx_Winter: Uniform_Base {
+		
+		scope=2;
+		scopeCurator = 2;
+		displayName = "[Helix] Winter";
+		author = "Wallace";
+		picture = "";
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
+
+		class ItemInfo: UniformItem {
+			uniformClass = "B_Helix_Winter";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -851,7 +930,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Cus_Wallace";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};
@@ -867,7 +946,7 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Rib";
-			containerClass = "Supply30";
+			containerClass = "Supply80";
 			mass = 35;
 		};
 	};

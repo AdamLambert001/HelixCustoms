@@ -76,6 +76,24 @@ class cfgWeapons
         hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_boxMag", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase"};
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "Helix_vests\Data\VSMLBT\boxmag.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\Gear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\lbtM81.paa"}; 
     };
+
+    class V_Helix_Operator_Winter: Helix_Vest_Base 
+	{
+		author = "Bruon + Paddu";
+		displayName = "[Helix] Winter Vest (Operator)";
+		picture = "";
+        hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
+        hiddenSelectionsTextures[] = {"Helix_vests\Data\ChestRigWinter.paa", "Helix_vests\Data\BattleBeltWinter.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\WinterGear.paa", "Helix_vests\Data\Winterradiopouch.paa", "Helix_vests\Data\LbtWinter.paa", "Helix_vests\Data\WinterPouches.paa", "Helix_vests\Data\Buttpouchwinter.paa"}; 
+    };
+
+    class V_Helix_Breacher_Winter: Helix_Vest_Breach_Base 
+	{
+		author = "Bruon + Paddu";
+		displayName = "[Helix] Winter Vest (Breacher)";
+		picture = "";
+        hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches", "_VSMButtPouch"}; 
+        hiddenSelectionsTextures[] = {"Helix_vests\Data\ChestRigWinter.paa", "Helix_vests\Data\BattleBeltWinter.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\WinterGear.paa", "Helix_vests\Data\Winterradiopouch.paa", "Helix_vests\Data\LbtWinter.paa", "Helix_vests\Data\WinterPouches.paa", "Helix_vests\Data\Buttpouchwinter.paa"}; 
+    };
 	//************************************************************************************************************************************************************************************************
     //*****            Customs              *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
