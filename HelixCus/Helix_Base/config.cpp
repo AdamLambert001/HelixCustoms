@@ -202,6 +202,25 @@ class CfgVehicles
 			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
 	};
 
+	class B_Helix_Pilot: B_medic_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Kroner";
+		displayName = "[Helix] Pilot"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "U_B_Helix_Pilot"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\VSM_Avi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "H_Avi_Stnrd"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "H_Avi_Stnrd"};
+	};
 
 //--------------------------------------------------Uniforms----------------------------------------------//
 	class Helix_Digi: B_soldier_F //selects what base to use
@@ -904,7 +923,7 @@ class cfgWeapons
 		scope=2;
 		scopeCurator = 2;
 		displayName = "[Helix] Winter";
-		author = "Wallace";
+		author = "Bruon + Paddu";
 		picture = "";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
@@ -914,6 +933,21 @@ class cfgWeapons
 			mass = 35;
 		};
 	};
+
+	class U_B_Helix_Pilot: Uniform_Base
+    { 
+         
+		scope=2;
+		scopeCurator = 2;
+        displayName = "[Helix] Aviation Uniform";
+		author = "Kroner";
+        picture = ""; 
+        class ItemInfo : UniformItem { 
+            uniformClass = "B_Helix_Pilot";
+            containerClass = "Supply80"; 
+            mass = 35; 
+        }; 
+    };
 
 	//-------------------------------------------------------------------------------------------Customs-------------------------------------------------------------------------------------------//
 	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//

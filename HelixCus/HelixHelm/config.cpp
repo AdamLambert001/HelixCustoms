@@ -19,6 +19,7 @@ class cfgWeapons
 	class H_Beret_02;
     class rhsusf_hgu56p_visor_tan;
     class Hlx_OPSCORE_BASE;
+    class H_MilCap_gry;
     class Uniform_Base: ItemCore
     { 
         class ItemInfo; 
@@ -39,6 +40,14 @@ class cfgWeapons
 		picture = "\Helix_Base\UI\beret.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\beret_officer.paa"};
 	};//rhsusf_hgu56p_visor_tan
+
+    class H_Vib_MilCap: H_MilCap_gry {
+		author = "Wallace";
+		_generalMacro = "H_Vib_MilCap";
+		displayName = "[Helix Customs] Vibro's Military Cap";
+		picture = "";
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\Vib_Cap.paa"};
+	};
 
     class H_Avi_Stnrd: rhsusf_hgu56p_visor_tan {
 		author = "Wallace";
