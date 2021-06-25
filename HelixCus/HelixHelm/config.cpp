@@ -127,4 +127,11 @@ class cfgWeapons
 		picture = "\Helix_Base\UI\avi.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Kro.paa"};
 	};
+
+    class H_C_Avi_Marcos: rhsusf_hgu56p_visor_tan {
+		author = "Kroner";
+		displayName = "[Helix Customs] Marcos HGU56";
+		picture = "\Helix_Base\UI\avi.paa";
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Marcos.paa"};
+	};
 }; 
