@@ -102,6 +102,26 @@ class CfgVehicles
 			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
 	};
 
+	class Helix_Soldier_Pvt_Digi02: B_soldier_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Soldier"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi_02"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Hlx_Digi_02.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
 	class Helix_Soldier_Med: B_medic_F //selects what base to use Hlx_Categ_Infantry
 	{
 		scope=2;
@@ -685,6 +705,20 @@ class cfgWeapons
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_Digi"; 
+            containerClass = "Supply80"; 
+            mass = 35; 
+        }; 
+    };
+	class Helix_Full_Digi_02: Uniform_Base
+    { 
+         
+		scope=2;
+		scopeCurator = 2;
+        displayName = "[Helix] Alt Full Digi"; 
+        picture = ""; 
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+        class ItemInfo : UniformItem { 
+            uniformClass = "Helix_Soldier_Pvt_Digi02"; 
             containerClass = "Supply80"; 
             mass = 35; 
         }; 
