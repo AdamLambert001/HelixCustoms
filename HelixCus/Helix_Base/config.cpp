@@ -568,6 +568,46 @@ class CfgVehicles
 			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
 	};
 
+	class B_Helix_Digi_Tan: B_soldier_F //selects what base to use
+	{
+		
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Winter Camo"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
+		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		backpack = "";
+		uniformclass = "U_B_Helix_Digi_Tan"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"Helix_Base\Data\G3\G3_DesertDigi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class B_Helix_M81_Tan: B_soldier_F //selects what base to use
+	{
+		
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Winter Camo"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
+		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		backpack = "";
+		uniformclass = "U_B_Helix_M81_Tan"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"Helix_Base\Data\G3\G3_DesertM81.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
 	//-------------------------------------------------------------------------------------------Customs-------------------------------------------------------------------------------------------//
 	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
@@ -701,7 +741,7 @@ class cfgWeapons
 		scope=2;
 		scopeCurator = 2;
         displayName = "[Helix] Full Digi"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\digiIcon.paa"; 
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_Digi"; 
@@ -715,7 +755,7 @@ class cfgWeapons
 		scope=2;
 		scopeCurator = 2;
         displayName = "[Helix] Alt Full Digi"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\digi2Icon.paa"; 
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_Soldier_Pvt_Digi02"; 
@@ -729,7 +769,7 @@ class cfgWeapons
 		scope=2;
 		scopeCurator = 2;
         displayName = "[Helix] Full M81"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\m81Icon.paa"; 
         model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_M81"; 
@@ -744,7 +784,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] Digital (Black)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_Blk";
@@ -759,7 +799,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] M81 (Black)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\m81Icon.paa";
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_Blk";
@@ -774,7 +814,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] Digital (OD Green)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_OD";
@@ -789,7 +829,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] M81 (OD Green)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\m81Icon.paa";
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_OD";
@@ -804,7 +844,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] Digital (Grey)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Digi_Grey";
@@ -819,7 +859,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] M81 (Grey)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\m81Icon.paa";
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_M81_Grey";
@@ -833,7 +873,7 @@ class cfgWeapons
 		scope=2;
 		scopeCurator = 2;
         displayName = "[Helix] Full Digi (Rolled)"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\digiIcon.paa"; 
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_Digi_SS"; 
@@ -847,7 +887,7 @@ class cfgWeapons
 		scope=2;
 		scopeCurator = 2;
         displayName = "[Helix] Full M81 (Rolled)"; 
-        picture = ""; 
+        picture = "\Helix_Base\UI\m81Icon.paa"; 
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
         class ItemInfo : UniformItem { 
             uniformClass = "Helix_M81_SS"; 
@@ -862,7 +902,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] Digital (Black Rolled)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -878,7 +918,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] M81 (Black Rolled)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\m81Icon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -894,7 +934,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] Digital (OD Green Rolled)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -910,7 +950,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] M81 (OD Green Rolled)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\m81Icon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -926,7 +966,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] Digital (Grey Rolled)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -942,7 +982,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] M81 (Grey Rolled)";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\m81Icon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -950,7 +990,7 @@ class cfgWeapons
 			containerClass = "Supply80";
 			mass = 35;
 		};
-	};
+	}; //U_B_Helix_M81_Tan
 
 	class U_B_Hlx_Winter: Uniform_Base {
 		
@@ -958,7 +998,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix] Winter";
 		author = "Bruon + Paddu";
-		picture = "";
+		picture = "\Helix_Base\UI\WinM81Icon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -968,6 +1008,39 @@ class cfgWeapons
 		};
 	};
 
+	class U_B_Helix_M81_Tan: Uniform_Base {
+		
+		scope=2;
+		scopeCurator = 2;
+		displayName = "[Helix] M81 (Desert Tan)";
+		author = "Wallace";
+		picture = "\Helix_Base\UI\TanM81Icon.paa";
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
+
+		class ItemInfo: UniformItem {
+			uniformClass = "B_Helix_M81_Tan";
+			containerClass = "Supply80";
+			mass = 35;
+		};
+	};
+
+	class U_B_Helix_Digi_Tan: Uniform_Base {
+		
+		scope=2;
+		scopeCurator = 2;
+		displayName = "[Helix] Digi (Desert Tan)";
+		author = "Wallace";
+		picture = "\Helix_Base\UI\TanDigiIcon.paa";
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
+
+		class ItemInfo: UniformItem {
+			uniformClass = "B_Helix_Digi_Tan";
+			containerClass = "Supply80";
+			mass = 35;
+		};
+	};
+
+
 	class U_B_Helix_Pilot: Uniform_Base
     { 
          
@@ -975,7 +1048,7 @@ class cfgWeapons
 		scopeCurator = 2;
         displayName = "[Helix] Aviation Uniform";
 		author = "Kroner";
-        picture = ""; 
+        picture = "\Helix_Base\UI\digiIcon.paa"; 
         class ItemInfo : UniformItem { 
             uniformClass = "B_Helix_Pilot";
             containerClass = "Supply80"; 
@@ -993,7 +1066,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix Customs] Wallace Uniform";
 		author = "Wallace";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
@@ -1009,7 +1082,7 @@ class cfgWeapons
 		scopeCurator = 2;
 		displayName = "[Helix Customs] Rib's Uniform";
 		author = "Rib";
-		picture = "";
+		picture = "\Helix_Base\UI\digiIcon.paa";
         model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
 
 		class ItemInfo: UniformItem {
