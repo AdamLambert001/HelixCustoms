@@ -20,6 +20,7 @@ class cfgWeapons
     class rhsusf_hgu56p_visor_tan;
     class Hlx_OPSCORE_BASE;
     class H_MilCap_gry;
+    class rhs_altyn;
     class Uniform_Base: ItemCore
     { 
         class ItemInfo; 
@@ -115,10 +116,19 @@ class cfgWeapons
     class Srg_Airframe : Hlx_Wallace_Airframe 
     {
         author = "Wallace";
-		displayName = "[Helix Customs] SRG Airframe";
+		displayName = "[Helix] SRG Airframe";
         picture = "\Helix_Base\UI\helm.paa";
         hiddenSelections[] = {"camo", "camo2"};
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\srg.paa", "\mas_cia_jsog\fast\data\ops_co.paa"};
+    };
+
+    class H_Aleksei_Altyn : rhs_altyn 
+    {
+        author = "Wallace";
+		displayName = "[Helix Customs] Aleksei Altyn";
+        picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\alekAltyn.paa"};
     };
 
     class H_C_Avi_Kroner: rhsusf_hgu56p_visor_tan {
