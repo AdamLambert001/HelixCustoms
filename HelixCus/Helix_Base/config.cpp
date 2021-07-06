@@ -668,6 +668,7 @@ class CfgVehicles
         displayName = "[Helix Custom] Matt Radio Backpack";
         picture = "";
         hiddenSelectionsTextures[] = {"Helix_Base\Data\Cus_M_ROB.paa"};
+		tf_range = 60000;
 	};
     
     class Custom_Backpack_Compact: tfw_ilbe_gr {
@@ -678,6 +679,7 @@ class CfgVehicles
         picture = "";
         hiddenSelections[] = {"Camo"}; 
         hiddenSelectionsTextures[] = {"Helix_Base\Data\H_RB.paa"};
+		tf_range = 60000;
     };
 
 	class Helix_Backpack_Carryall_Winter: B_Carryall_Base {
@@ -718,6 +720,7 @@ class CfgVehicles
         picture = "";
         hiddenSelections[] = {"Camo"}; 
         hiddenSelectionsTextures[] = {"Helix_Base\Data\H_WRB.paa"};
+		tf_range = 60000;
     };
 };
 
