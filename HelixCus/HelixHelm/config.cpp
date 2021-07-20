@@ -92,6 +92,14 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\opsh_bruon.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
     };
 
+    class H_Ops_Paddu: Hlx_OPSCORE_BASE {
+		author = "Wallace";
+		displayName = "[Helix Customs] Paddu's Ops";
+		picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\OpsPad.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
+    };
+
     class Hlx_Wallace_Airframe: H_HelmetB
     {
         displayName = "[Helix Customs] Wallace Airframe";
@@ -106,7 +114,7 @@ class cfgWeapons
             uniformModel = "\mas_cia_jsog\fast\mas_airframe_b.p3d";
             modelSides[] = {3,1};
             hiddenSelections[] = {"camo", "camo2"};
-            armor = "20";
+            armor = "40";
             passThrough = 0.65;
 			ace_hearing_lowerVolume = 0.10;
         	ace_hearing_protection = 0.80;

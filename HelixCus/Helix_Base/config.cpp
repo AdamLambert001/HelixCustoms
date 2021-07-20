@@ -2,7 +2,7 @@ class CfgPatches
 { 
     class HelixBase 
     {
-        units[] = {"Hlx_Cus_Faction", "Helix_Digi", "Helix_M81", "Helix_Cus_Wallace", "Helix_Digi_Grey"}; 
+        units[] = {"Hlx_Cus_Faction", "Helix_Digi", "Helix_M81", "Helix_Cus_Wallace", "Helix_Digi_Grey", "I_Helix_Soldier_Pvt"}; 
         weapons[] = {}; 
         requiredVersion = 0.1; 
         requiredAddons[] = {"A3_Characters_F", "rhsusf_main", "rhsusf_c_weapons", "mas_cia_jsog", "rhsusf_c_troops", "rhs_infantry2"}; 
@@ -22,7 +22,16 @@ class cfgFactionClasses
         priority = 3; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = ""; //Custom Icon 
-    };  
+    };
+	class Hlx_Cus_Faction_IDEP 
+    { 
+		scope=2;
+		scopeCurator = 2;
+        displayName = "Helix Company"; 
+        priority = 3; // Position in list. 
+        side = 2; // Opfor = 0, Blufor = 1, Indep = 2. 
+        icon = ""; //Custom Icon 
+    };
 };
 
 class CfgEditorSubcategories
@@ -156,9 +165,9 @@ class CfgVehicles
         hiddenSelections[] = {"Camo","Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
 			{"\Helix_Base\Data\G3\Digi.paa"};
-		linkedItems[] = //what items you wish the unit to spawn with when placed down
+		linkedItems[] = 
 			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
-		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+		respawnLinkedItems[] = 
 			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
 	};
 
@@ -229,6 +238,174 @@ class CfgVehicles
 		author = "Kroner";
 		displayName = "[Helix] Pilot"; //the display name for the arsenal
 		faction = "Hlx_Cus_Faction"; //what faction you want it displayed under
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "U_B_Helix_Pilot"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\VSM_Avi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "H_Avi_Stnrd"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "H_Avi_Stnrd"};
+	};
+
+	//--------------------------------------------------Independant----------------------------------------------//
+	class I_Survivor_F;
+	class I_soldier_F;
+	class I_medic_F;
+	class I_soldier_SL_F;
+	class I_pilot_F;
+	class I_officer_F;
+
+	class I_Helix_Soldier_Pvt: I_soldier_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Soldier"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Digi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class I_Helix_Soldier_Pvt_Digi02: I_soldier_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Soldier"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi_02"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Hlx_Digi_02.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class I_Helix_Soldier_Med: I_medic_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Combat Medic"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Digi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class I_Helix_Soldier_TL: I_Soldier_SL_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] FireTeam Lead"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Digi.paa"};
+		linkedItems[] = 
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = 
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class I_Helix_Soldier_SL: I_Soldier_SL_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Squad Leader"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Digi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class I_Helix_Soldier_Ser: I_Soldier_SL_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Sergeant"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Digi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class I_Helix_Soldier_Off: I_officer_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Wallace";
+		displayName = "[Helix] Officer"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
+        model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d"; 
+		backpack = "";
+		editorSubcategory="Hlx_Categ_Infantry";
+		uniformclass = "Helix_Full_Digi"; //links up to the class in CfgWeapons
+        hiddenSelections[] = {"Camo","Insignia"}; 
+		hiddenSelectionsTextures[] = //the two PAAs you want to change
+			{"\Helix_Base\Data\G3\Digi.paa"};
+		linkedItems[] = //what items you wish the unit to spawn with when placed down
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+		respawnLinkedItems[] = //the items you wish for the unit to respawn with
+			{"H_Vest_OP_Black", "Hlx_OPSCORE_BASE"};
+	};
+
+	class I_Helix_Pilot: I_pilot_F //selects what base to use Hlx_Categ_Infantry
+	{
+		scope=2;
+		scopeCurator = 2;
+		author = "Kroner";
+		displayName = "[Helix] Pilot"; //the display name for the arsenal
+		faction = "Hlx_Cus_Faction_IDEP"; //what faction you want it displayed under
         model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d"; 
 		backpack = "";
 		editorSubcategory="Hlx_Categ_Infantry";
