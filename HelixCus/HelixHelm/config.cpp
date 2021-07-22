@@ -152,4 +152,4 @@ class cfgWeapons
 		picture = "\Helix_Base\UI\avi.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Marcos.paa"};
 	};
-}; 
+};

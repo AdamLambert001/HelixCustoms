@@ -2,7 +2,7 @@ class CfgPatches
 { 
     class Helix_Veh
     {
-        units[] = {"HelixPandur2", "HelixUH1Y_Unarmed", "HelixUH1Y_MG", "HelixUH1Y_CAS", "HelixLilBirb_CAS", "HelixLilBirb_Transport", "HelixBlackHawk", "O_mas_chi_MRAP_02_F_2"}; 
+        units[] = {"B_Helix_Hunter", "B_Helix_Ifrit_02", "HelixPandur2", "HelixUH1Y_Unarmed", "HelixUH1Y_MG", "HelixUH1Y_CAS", "HelixLilBirb_CAS", "HelixLilBirb_Transport", "HelixBlackHawk", "O_mas_chi_MRAP_02_F_2"}; 
         weapons[] = {}; 
         requiredversion = 1.740000; 
         requiredAddons[] = {"A3_Characters_F", "rhsusf_main", "rhsusf_c_weapons", "mas_cia_jsog", "rhsusf_c_troops", "rhs_infantry2"}; 
@@ -37,11 +37,25 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"#(ai,64,64,1)Fresnel(1.3,7)", "#(ai,64,64,1)Fresnel(1.3,7)"};
     };
 
-    class O_Helix_Hunter: O_MRAP_02_F 
+    class B_Helix_Ifrit_02: O_MRAP_02_F 
     {
         side = 1;
         crew = "Helix_Digi_Grey";
         faction = "Hlx_Cus_Faction";
+        displayName = "[Helix] Ifrit (02)";
+        hiddenSelections[] = {"Camo1", "Camo2"};
+        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\darf2.paa", "Helix_vehicles\Data\darb1.paa"};
+        class EventHandlers 
+        {
+            init = "(_this select 0) setvariable [""BIS_enableRandomization"", false];"
+        };
+    };
+
+    class I_Helix_Ifrit_02: O_MRAP_02_F 
+    {
+        side = 2;
+        crew = "Helix_Digi_Grey";
+        faction = "Hlx_Cus_Faction_IDEP";
         displayName = "[Helix] Ifrit (02)";
         hiddenSelections[] = {"Camo1", "Camo2"};
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\darf2.paa", "Helix_vehicles\Data\darb1.paa"};
