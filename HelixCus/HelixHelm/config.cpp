@@ -84,13 +84,6 @@ class cfgWeapons
     };
 
     //----------------------------Customs----------------------------//
-    class H_Ops_Bruon: Hlx_OPSCORE_BASE {
-		author = "Wallace";
-		displayName = "[Helix Customs] Bruon's Ops";
-		picture = "\Helix_Base\UI\helm.paa";
-        hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
-        hiddenSelectionsTextures[] = {"\HelixHelm\Data\opsh_bruon.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
-    };
 
     class H_Ops_Paddu: Hlx_OPSCORE_BASE {
 		author = "Wallace";
