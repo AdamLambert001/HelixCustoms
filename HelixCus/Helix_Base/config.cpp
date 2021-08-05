@@ -859,6 +859,18 @@ class CfgVehicles
 		tf_range = 60000;
     };
 
+	class HS_RadioBackpack_Med: tfw_ilbe_gr {
+        
+		scope=2;
+		scopeCurator = 2;
+        displayName = "[Helix] Medical Radio Backpack";
+        picture = "";
+        hiddenSelections[] = {"Camo"}; 
+        hiddenSelectionsTextures[] = {"Helix_Base\Data\H_RB.paa"};
+		maximumLoad = 280;
+		tf_range = 60000;
+    };
+
 	class Helix_Backpack_Carryall_Winter: B_Carryall_Base {
         
         scope=2;
