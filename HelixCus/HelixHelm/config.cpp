@@ -145,4 +145,15 @@ class cfgWeapons
 		picture = "\Helix_Base\UI\avi.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Marcos.paa"};
 	};
+
+    class H_HelmetHBK_headset_base_F;
+    class H_HelmetHBK_headset_F;
+    class HeadgearItem;
+
+    class H_Adv_Irish: H_HelmetHBK_headset_F {
+		author = "Wallace";
+		displayName = "[Helix Customs] Irish's Helmet";
+		picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\IrishLDF.paa"};
+    };
 };

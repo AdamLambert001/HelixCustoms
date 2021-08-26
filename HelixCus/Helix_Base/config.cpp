@@ -866,7 +866,7 @@ class CfgVehicles
         displayName = "[Helix] Medical Radio Backpack";
         picture = "";
         hiddenSelections[] = {"Camo"}; 
-        hiddenSelectionsTextures[] = {"Helix_Base\Data\H_RB.paa"};
+        hiddenSelectionsTextures[] = {"Helix_Base\Data\H_RB_M.paa"};
 		maximumLoad = 280;
 		tf_range = 60000;
     };
