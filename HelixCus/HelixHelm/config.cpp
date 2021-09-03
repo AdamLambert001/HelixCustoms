@@ -21,6 +21,8 @@ class cfgWeapons
     class Hlx_OPSCORE_BASE;
     class H_MilCap_gry;
     class rhs_altyn;
+    class H_mas_cia_helmet_ops_gog_b;
+    class H_Booniehat_khk;
     class Uniform_Base: ItemCore
     { 
         class ItemInfo; 
@@ -41,14 +43,6 @@ class cfgWeapons
 		picture = "\Helix_Base\UI\beret.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\beret_officer.paa"};
 	};//rhsusf_hgu56p_visor_tan
-
-    class H_Vib_MilCap: H_MilCap_gry {
-		author = "Wallace";
-		_generalMacro = "H_Vib_MilCap";
-		displayName = "[Helix Customs] Vibro's Military Cap";
-		picture = "";
-        hiddenSelectionsTextures[] = {"\HelixHelm\Data\Vib_Cap.paa"};
-	};
 
     class H_Avi_Stnrd: rhsusf_hgu56p_visor_tan {
 		author = "Wallace";
@@ -93,6 +87,14 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\OpsPad.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
     };
 
+    class H_Ops_Matt: Hlx_OPSCORE_BASE {
+		author = "Wallace";
+		displayName = "[Helix Customs] Matt's Ops";
+		picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelections[] = {"_helmBase", "_helmGear", "_nvgWeight", "_Peltor"};
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\MattOps.paa", "vsm_helmets\textures\vsm_helmet_pouch.paa", "vsm_helmets\textures\secco2.paa", "vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
+    };
+
     class Hlx_Wallace_Airframe: H_HelmetB
     {
         displayName = "[Helix Customs] Wallace Airframe";
@@ -114,6 +116,19 @@ class cfgWeapons
         };
     };
 
+    class Helix_Helmet_Rib: H_mas_cia_helmet_ops_gog_b {
+		_generalMacro = "Helix_Helmet_Rib";
+		displayName = "[Helix Customs] Opscore goggles (Rib)";
+		picture = "\Helix_Base\UI\mhelm.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"\HelixHelm\Data\Ribs_Helm_Cover.paa",
+			"", //velcro gay
+			"\HelixHelm\Data\Ribs_Helm_Acc.paa",
+			"\HelixHelm\Data\Ribs_Helm_Gog.paa"
+		};
+	};
+
     class Srg_Airframe : Hlx_Wallace_Airframe 
     {
         author = "Wallace";
@@ -132,6 +147,15 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\alekAltyn.paa"};
     };
 
+    class H_Behnki_Altyn : rhs_altyn 
+    {
+        author = "Wallace";
+		displayName = "[Helix Customs] Behnki Altyn";
+        picture = "\Helix_Base\UI\helm.paa";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\BehnkAltyn.paa"};
+    };
+
     class H_C_Avi_Kroner: rhsusf_hgu56p_visor_tan {
 		author = "Wallace";
 		displayName = "[Helix Customs] Kronenberg HGU56";
@@ -144,6 +168,12 @@ class cfgWeapons
 		displayName = "[Helix Customs] Marcos HGU56";
 		picture = "\Helix_Base\UI\avi.paa";
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Marcos.paa"};
+	};
+
+    class H_Boon_Caro: H_Booniehat_khk {
+		author = "Wallace";
+		displayName = "[Helix Customs] De Caro's Boonie";
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\CaroBoon.paa"};
 	};
 
     class H_HelmetHBK_headset_base_F;

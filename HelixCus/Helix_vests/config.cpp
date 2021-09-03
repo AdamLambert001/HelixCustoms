@@ -161,6 +161,21 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"Helix_vests\Data\VSMLBT\ChestRigblk.paa", "Helix_vests\Data\VSMLBT\BattleBeltBlk.paa", "vsm_vests\lbt6094\textures\vsm_dropholster.paa", "vsm_vests\spectergear_rav\data\serpa.paa", "Helix_vests\Data\VSMLBT\YeetGear.paa", "Helix_vests\Data\VSMLBT\radio_pouch.paa", "Helix_vests\Data\VSMLBT\YeetLbt.paa", "Helix_vests\Data\VSMLBT\pouchesYeet.paa", "Helix_vests\Data\VSMLBT\Buttpouchblk.paa"}; 
     };
 
+    class V_mas_cia_PlateCarrierAR_rgr;
+
+    class Helix_Rib_Vest: V_mas_cia_PlateCarrierAR_rgr {
+		author = "Rib"; //ty Massi for model <3
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[Helix Customs] Rib's Vest";
+		model = "\mas_cia_jsog\vest\mas_plate_carrier_AR";
+		hiddenSelectionsTextures[] = 
+		{
+			"\Helix_vests\Data\Ribs_Vest_Base.paa",
+			"\Helix_vests\Data\Ribs_Vest_Acc.paa"
+		};
+	};
+
     //************************************************************************************************************************************************************************************************
     //*****            Headgear              *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
