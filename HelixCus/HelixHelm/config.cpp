@@ -170,6 +170,12 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Marcos.paa"};
 	};
 
+    class H_C_Avi_Soaria: rhsusf_hgu56p_visor_tan {
+		displayName = "[Helix Customs] Soaria HGU56";
+		picture = "\Helix_Base\UI\avi.paa";
+        hiddenSelectionsTextures[] = {"\HelixHelm\Data\HGU_Soaria.paa"};
+	};
+
     class H_Boon_Caro: H_Booniehat_khk {
 		author = "Wallace";
 		displayName = "[Helix Customs] De Caro's Boonie";

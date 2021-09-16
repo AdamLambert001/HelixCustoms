@@ -176,6 +176,26 @@ class cfgWeapons
 		};
 	};
 
+    class VSM_FAPC_Operator_OGA_OD;
+
+    class HS_V_Paddu_Operator: VSM_FAPC_Operator_OGA_OD {
+		author = "Wallace";
+		displayName = "[Helix Customs] Paddu's Vest (Operator)";
+		picture = "\Helix_Base\UI\vest.paa";
+        hiddenSelections[] = {"_1961aPouches", "_battleBelt", "_DropHolster", "_Serpa", "_SOTGGear", "_SOTGRadio", "_vestBase", "_VSMPouches"}; 
+        hiddenSelectionsTextures[] = 
+		{
+		"\Helix_vests\Data\Paddu\Paddu_OGA_chestrig.paa", 
+		"\Helix_vests\Data\Paddu\Paddu_battlebelt_OGA.paa", 
+		"\Helix_vests\Data\Paddu\Paddu_dropholster_OGA.paa", 
+		"\Helix_vests\Data\Paddu\Paddu_serpa_tan.paa", 
+		"\Helix_vests\Data\Paddu\Paddu_OGA_gear_co.paa", 
+		"\Helix_vests\Data\Paddu\Paddu_radio_pouch.paa", 
+		"\Helix_vests\Data\Paddu\Paddu_fapc_OGA.paa", 
+		"\Helix_vests\Data\Paddu\Paddu_pouches_OGA.paa"
+		}; 
+    };
+
     //************************************************************************************************************************************************************************************************
     //*****            Headgear              *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************

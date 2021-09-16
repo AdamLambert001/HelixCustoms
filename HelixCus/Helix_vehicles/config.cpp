@@ -27,6 +27,10 @@ class CfgVehicles
     class LSV_01_unarmed_base_F;
     class B_LSV_01_unarmed_F;
     class B_MRAP_01_F;
+    class vtx_MH60S_Pylons;
+    class vtx_HH60;
+    class vtx_MH60S_GAU21L;
+    class rhsusf_CH53E_USMC;
 
     class B_Helix_Hunter: B_MRAP_01_F 
     {
@@ -50,21 +54,7 @@ class CfgVehicles
             init = "(_this select 0) setvariable [""BIS_enableRandomization"", false];"
         };
     };
-
-    class I_Helix_Ifrit_02: O_MRAP_02_F 
-    {
-        side = 2;
-        crew = "Helix_Digi_Grey";
-        faction = "Hlx_Cus_Faction_IDEP";
-        displayName = "[Helix] Ifrit (02)";
-        hiddenSelections[] = {"Camo1", "Camo2"};
-        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\darf2.paa", "Helix_vehicles\Data\darb1.paa"};
-        class EventHandlers 
-        {
-            init = "(_this select 0) setvariable [""BIS_enableRandomization"", false];"
-        };
-    };
-
+    
     class HelixPandur2_Blk: I_APC_Wheeled_03_cannon_F
     {
         side = 1;
@@ -89,22 +79,9 @@ class CfgVehicles
         displayName = "[Helix] Pandur II";
         hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\APC_01_P6.paa", "Helix_vehicles\Data\APC_02_P3.paa", "Helix_vehicles\Data\APC_RCWS_02.paa", "Helix_vehicles\Data\APC_Rails_02.paa"};
-    };//I_Helix_Soldier_Pvt Hlx_Cus_Faction_IDEP
-
-    class I_HelixPandur2: I_APC_Wheeled_03_cannon_F
-    {
-        side = 2;
-        scope=2;
-		scopeCurator = 2;
-        vehicleClass = "Armoured";
-        crew = "I_Helix_Soldier_Pvt";
-        faction = "Hlx_Cus_Faction_IDEP";
-        displayName = "[Helix] Pandur II";
-        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
-        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\APC_01_P6.paa", "Helix_vehicles\Data\APC_02_P3.paa", "Helix_vehicles\Data\APC_RCWS_02.paa", "Helix_vehicles\Data\APC_Rails_02.paa"};
     };
 
-//-------------------------------------------------Helicopters-------------------------------------------------//
+    //-------------------------------------------------Helicopters-------------------------------------------------//
     class HelixUH1Y_Unarmed: RHS_UH1Y_UNARMED_d
     {
         side = 1;
@@ -113,6 +90,8 @@ class CfgVehicles
         crew = "Helix_Digi_Grey";
         faction = "Hlx_Cus_Faction";
         displayName = "[Helix] UH-1Y (Unarmed)";
+        ace_fastroping_enabled = 1;
+        ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
         hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\UH1Y_Ven.paa"};
     };
@@ -125,6 +104,8 @@ class CfgVehicles
         crew = "Helix_Digi_Grey";
         faction = "Hlx_Cus_Faction";
         displayName = "[Helix] UH-1Y (MG)";
+        ace_fastroping_enabled = 1;
+        ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
         hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\UH1Y_Ven.paa"};
     };
@@ -137,6 +118,8 @@ class CfgVehicles
         crew = "Helix_Digi_Grey";
         faction = "Hlx_Cus_Faction";
         displayName = "[Helix] UH-1Y (CAS)";
+        ace_fastroping_enabled = 1;
+        ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
         hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\UH1Y_Ven.paa"};
     };
@@ -164,77 +147,73 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
         hiddenSelectionsTextures[] = {"Helix_vehicles\Data\LittleB_Helix.paa"};
     };
-    
-    class HelixBlackHawk: RHS_UH60M
+
+    class HS_HH60_Knghthawk_Pylons: vtx_MH60S_Pylons
     {
         side = 1;
         scope=2;
 		scopeCurator = 2;
         crew = "Helix_Digi_Grey";
         faction = "Hlx_Cus_Faction";
-        displayName = "[Helix] UH-60";
-        hiddenSelections[] = {""}; //Camo1,Camo2,Camo3 refer to the texture selection.
-        hiddenSelectionsTextures[] = {""};
+        displayName = "[Helix] Knighthawk (Pylons)";
+        hiddenSelectionsTextures[] = 
+        {"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+        "Helix_vehicles\Data\Kh_Main_1.paa", 
+        "Helix_vehicles\Data\Kh_Misc_1.paa", 
+        "Helix_vehicles\Data\Kh_Tail_1.paa"
+        };
     };
 
-    class I_HelixUH1Y_Unarmed: RHS_UH1Y_UNARMED_d
+    class HS_HH60_Pavehawk: vtx_HH60
     {
-        side = 2;
+        side = 1;
         scope=2;
 		scopeCurator = 2;
-        crew = "I_Helix_Soldier_Pvt";
-        faction = "Hlx_Cus_Faction_IDEP";
-        displayName = "[Helix] UH-1Y (Unarmed)";
-        hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
-        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\UH1Y_Ven.paa"};
+        crew = "Helix_Digi_Grey";
+        faction = "Hlx_Cus_Faction";
+        displayName = "[Helix] Pavehawk";
+        hiddenSelectionsTextures[] = 
+        {"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+        "Helix_vehicles\Data\Kh_Main_1.paa", 
+        "Helix_vehicles\Data\Kh_Misc_1.paa", 
+        "Helix_vehicles\Data\Kh_Tail_1.paa", 
+        "z\vtx\addons\UH60\Data\Exterior\Markings\Markings_ca.paa", "", "", "", "", 
+        "z\vtx\addons\UH60\Data\FuelProbe\Fuel_probe_co.paa"
+        };
     };
 
-    class I_HelixUH1Y_MG: RHS_UH1Y_d
+    class HS_HH60_Knghthawk_GAU21: vtx_MH60S_GAU21L
     {
-        side = 2;
+        side = 1;
         scope=2;
 		scopeCurator = 2;
-        crew = "I_Helix_Soldier_Pvt";
-        faction = "Hlx_Cus_Faction_IDEP";
-        displayName = "[Helix] UH-1Y (MG)";
-        hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
-        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\UH1Y_Ven.paa"};
+        crew = "Helix_Digi_Grey";
+        faction = "Hlx_Cus_Faction";
+        displayName = "[Helix] Knighthawk (GAU-21)";
+        hiddenSelectionsTextures[] = 
+        {"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+        "Helix_vehicles\Data\Kh_Main_1.paa", 
+        "Helix_vehicles\Data\Kh_Misc_1.paa", 
+        "Helix_vehicles\Data\Kh_Tail_1.paa"
+        };
     };
 
-    class I_HelixUH1Y_CAS: RHS_UH1Y_FFAR_d
+
+    class HS_CH53: rhsusf_CH53E_USMC
     {
-        side = 2;
+        side = 1;
         scope=2;
 		scopeCurator = 2;
-        crew = "I_Helix_Soldier_Pvt";
-        faction = "Hlx_Cus_Faction_IDEP";
-        displayName = "[Helix] UH-1Y (CAS)";
-        hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
-        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\UH1Y_Ven.paa"};
+        crew = "Helix_Digi_Grey";
+        faction = "Hlx_Cus_Faction";
+        displayName = "[Helix] CH53E (Transport)";
+        hiddenSelections[] = {"camo", "camo1", "n1", "n2"}; //Camo1,Camo2,Camo3 refer to the texture selection.
+        hiddenSelectionsTextures[] = 
+        {
+        "\Helix_vehicles\Data\HS_CH53", 
+        "rhsusf\addons\rhsusf_ch53\data\ch53_acc_co.paa", 
+        "rhsusf\addons\rhsusf_decals\Data\Numbers\USMCBlackShadow\5_ca.paa", 
+        "rhsusf\addons\rhsusf_decals\Data\Numbers\USMCBlackShadow\5_ca.paa"
+        };
     };
-
-    class I_HelixLilBirb_CAS: RHS_MELB_AH6M
-    {
-        side = 2;
-        scope=2;
-		scopeCurator = 2;
-        crew = "I_Helix_Soldier_Pvt";
-        faction = "Hlx_Cus_Faction_IDEP";
-        displayName = "[Helix] AH-6M (CAS)";
-        hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
-        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\LittleB_01_BB.paa"};
-    };
-
-    class I_HelixLilBirb_Transport: RHS_MELB_MH6M
-    {
-        side = 2;
-        scope=2;
-		scopeCurator = 2;
-        crew = "I_Helix_Soldier_Pvt";
-        faction = "Hlx_Cus_Faction_IDEP";
-        displayName = "[Helix] MH-6M (Transport)";
-        hiddenSelections[] = {"camo1"}; //Camo1,Camo2,Camo3 refer to the texture selection.
-        hiddenSelectionsTextures[] = {"Helix_vehicles\Data\LittleB_Helix.paa"};
-    };
-
 };

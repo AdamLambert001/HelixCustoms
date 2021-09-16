@@ -840,7 +840,7 @@ class CfgVehicles
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		backpack = "";
 		editorSubcategory="Hlx_Categ_Cus";
-		uniformclass = "Helix_Rib_uni"; //links up to the class in CfgWeapons
+		uniformclass = "Helix_Aleksei_uni"; //links up to the class in CfgWeapons
         hiddenSelections[] = {"camo1" ,"Insignia"}; 
 		hiddenSelectionsTextures[] = //the two PAAs you want to change
 			{"\Helix_Base\Data\G3\AlekUni.paa"};
@@ -1299,6 +1299,22 @@ class cfgWeapons
 
 		class ItemInfo: UniformItem {
 			uniformClass = "Helix_Rib";
+			containerClass = "Supply80";
+			mass = 35;
+		};
+	};
+
+	class Helix_Aleksei_Uni: Uniform_Base {
+		
+		scope=2;
+		scopeCurator = 2;
+		displayName = "[Helix Customs] Aleksei's Uniform";
+		author = "Rib";
+		picture = "\Helix_Base\UI\digiIcon.paa";
+        model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d"; 
+
+		class ItemInfo: UniformItem {
+			uniformClass = "Helix_Aleksei";
 			containerClass = "Supply80";
 			mass = 35;
 		};
